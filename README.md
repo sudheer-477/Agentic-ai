@@ -29,3 +29,18 @@ api call from groq free
 5. Chain of thought — Asking the model to "think step by step" 
    showed its full reasoning process before the final answer, 
    making it easier to verify correctness.
+
+## Day 4.langchain
+**Runnable** — the base interface every LangChain component implements
+(.invoke(), .batch(), .stream()). It's what lets prompts, models,
+and parsers all connect with the same | syntax.
+**ChatPromptTemplate** — role-tagged (system / user) prompts with
+{variable} placeholders filled in at call time.
+**LCEL (LangChain Expression Language)** — composing Runnables with |.
+Chain types:
+
+**Sequential** — prompt | llm | parser, output feeds into the next step
+**Transform**— RunnableLambda, wraps a plain Python function into the pipe
+**Parallel** — RunnableParallel, runs multiple chains on the same input at once
+**Branching** — RunnableBranch, routes to a chain based on a condition
+LLM provider: Groq (free tier), via langchain-groq.

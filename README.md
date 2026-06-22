@@ -30,37 +30,25 @@ api call from groq free
    showed its full reasoning process before the final answer, 
    making it easier to verify correctness.
 
-## Day 4.langchain
+## Day 4.langchaingit 
 **Runnable** — the base interface every LangChain component implements
 (.invoke(), .batch(), .stream()). It's what lets prompts, models,
 and parsers all connect with the same | syntax.
-
-
 **ChatPromptTemplate** — role-tagged (system / user) prompts with
 {variable} placeholders filled in at call time.
-
-
 **LCEL (LangChain Expression Language)** — composing Runnables with |.
 Chain types:
 
 **Sequential** — prompt | llm | parser, output feeds into the next step
-
 **Transform**— RunnableLambda, wraps a plain Python function into the pipe
-
 **Parallel** — RunnableParallel, runs multiple chains on the same input at once
-
 **Branching** — RunnableBranch, routes to a chain based on a condition
 LLM provider: Groq (free tier), via langchain-groq.
 
-## 22-june-2026
+**chromadb.Client()**-Creates local database in memory
 
-**Embeddings** --Embedding is technique where words are represented as dense numerical vector in contineous vector space
+**create_collection()**-Creates a named storage container
 
-**cosine similarity**--similarity measure in comparing text or images.it measures the angle of the to represented vectors
-            cosine_similarity(A, B) = (A · B) / (||A|| * ||B||)
-            range between 1 to -1
-            1 --> similar
-           -1 --> not similar
-            0 --> independent
-            
-**vectordatbase** --A vectordatabase is specialized database designed to store,index and query high dimensional vector numerical  representation of data called embeddings 
+**collection.add()**-store data as documents
+ 
+**collection.query()**-search by meaning

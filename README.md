@@ -51,3 +51,12 @@ Chain types:
 
 **Branching** — RunnableBranch, routes to a chain based on a condition
 LLM provider: Groq (free tier), via langchain-groq.
+## 22-june-2026
+**Embeddings** --Embedding is technique where words are represented as dense numerical vector in contineous vector space
+**cosine similarity**--similarity measure in comparing text or images.it measures the angle of the to represented vectors
+            cosine_similarity(A, B) = (A · B) / (||A|| * ||B||)
+            range between 1 to -1
+            1 --> similar
+           -1 --> not similar
+            0 --> independent
+**vectordatbase** --A vectordatabase is specialized database designed to store,index and query high dimensional vector numerical  representation of data called embeddings 

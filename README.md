@@ -45,8 +45,10 @@ Chain types:
 **Branching** — RunnableBranch, routes to a chain based on a condition
 LLM provider: Groq (free tier), via langchain-groq.
 
-## Chromadb:
-    a database used to store embeddings and retreive using sematic search where these embedings nothing but data stored in vectore dense spase
+## Chromadb:---> 
+ a database used to store embeddings and retreive using sematic search
+  where these embedings nothing but data stored in vectore dense spase
+
 
 **chromadb.Client()**-Creates local database in memory
 
